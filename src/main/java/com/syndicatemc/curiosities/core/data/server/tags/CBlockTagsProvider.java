@@ -5,7 +5,6 @@ import com.syndicatemc.curiosities.core.other.tags.CBlockTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -112,6 +111,8 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.DOORS).add(ALUMINUM_DOOR.get());
         this.tag(BlockTags.TRAPDOORS).add(ALUMINUM_TRAPDOOR.get());
 
+        this.tag(Tags.Blocks.CHAINS).add(BIG_CHAIN.get());
+
         this.tag(BlockTags.DIRT).add(LATERITE.get());
 
         this.tag(BlockTags.PIGLIN_REPELLENTS).add(SOUL_CAGE_LIGHT.get(), HEAVY_SOUL_LANTERN.get(), SOUL_TIKI_TORCH.get());
@@ -125,6 +126,6 @@ public class CBlockTagsProvider extends BlockTagsProvider {
         this.tag(CBlockTags.TRUMPET_OXIDIZED_NOTE_BLOCKS).add(Blocks.OXIDIZED_COPPER, Blocks.OXIDIZED_CUT_COPPER, Blocks.OXIDIZED_CUT_COPPER_STAIRS, Blocks.OXIDIZED_CUT_COPPER_SLAB, Blocks.OXIDIZED_CHISELED_COPPER, Blocks.OXIDIZED_COPPER_GRATE, Blocks.OXIDIZED_COPPER_BULB,
                 Blocks.WAXED_OXIDIZED_COPPER, Blocks.WAXED_OXIDIZED_CUT_COPPER, Blocks.WAXED_OXIDIZED_CUT_COPPER_STAIRS, Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, Blocks.WAXED_OXIDIZED_CHISELED_COPPER, Blocks.WAXED_OXIDIZED_COPPER_GRATE, Blocks.WAXED_OXIDIZED_COPPER_BULB);
         this.tag(CBlockTags.STEEL_DRUM_NOTE_BLOCKS).add(ALUMINUM_BLOCK.get(), CUT_ALUMINUM.get(), CUT_ALUMINUM_STAIRS.get(), CUT_ALUMINUM_SLAB.get(), SHEET_METAL.get(), ALUMINUM_GRATE.get());
-        this.tag(CBlockTags.SLAP_BASE_NOTE_BLOCKS).add(NICKEL_BLOCK.get());
+        this.tag(CBlockTags.SLAP_BASS_NOTE_BLOCKS).add(NICKEL_BLOCK.get());
     }
 }

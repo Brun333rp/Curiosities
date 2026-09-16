@@ -8,6 +8,7 @@ import com.teamabnormals.blueprint.core.data.server.tags.BlueprintItemTagsProvid
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
@@ -211,6 +212,11 @@ public class CItemTagsProvider extends BlueprintItemTagsProvider {
                 QUARTZ_WALL.asItem(), QUARTZ_BRICK_WALL.asItem(),
                 PURPUR_WALL.asItem()
         );
+
+        this.tag(ItemTags.DOORS).add(ALUMINUM_DOOR.asItem());
+        this.tag(ItemTags.TRAPDOORS).add(ALUMINUM_TRAPDOOR.asItem());
+
+        this.tag(Tags.Items.CHAINS).add(BIG_CHAIN.asItem());
 
         // Farmer's Delight and Kitchen Projectiles compat
         this.tag(FDTags.KNIFE).add(
